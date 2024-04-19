@@ -1,0 +1,70 @@
+<!-- Login Page -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login Page</h2>
+    <form action="/submit_login" method="post">
+        Email:<br>
+        <input type="text" name="email"><br>
+        Password:<br>
+        <input type="password" name="password"><br><br>
+        <input type="submit" value="Login">
+    </form>
+    <a href="/forgot_password">Forgot password?</a><br>
+    <a href="/signup">Don't have an account? Sign up</a>
+</body>
+</html>
+
+<!-- Sign Up Page -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign Up</title>
+</head>
+<body>
+    <h2>Sign Up Page</h2>
+    <form action="/submit_signup" method="post">
+        Email:<br>
+        <input type="text" name="email"><br>
+        Password:<br>
+        <input type="password" name="password"><br><br>
+        <input type="submit" value="Sign Up">
+    </form>
+</body>
+</html>
+
+<!-- Forgot Password Page -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgot Password</title>
+</head>
+<body>
+    <h2>Forgot Password Page</h2>
+    <form action="/submit_forgot_password" method="post">
+        Email:<br>
+        <input type="text" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+<!-- Dashboard Page -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+</head>
+<body>
+    <h2>Dashboard Page</h2>
+    <p>Welcome, [User]!</p>
+    <form action="/submit_payment" method="post">
+        Charging Fee:<br>
+        <input type="text" name="fee"><br><br>
+        <input type="submit" value="Pay">
+    </form>
+</body>
+</html>
